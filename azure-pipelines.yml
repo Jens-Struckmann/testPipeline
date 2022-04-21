@@ -30,8 +30,8 @@ steps:
 - task: AzureMysqlDeployment@1
   inputs:
     azureSubscription: 'Jens Struckmann(203576a1-6dee-472b-861d-016b6ed517c2)'
-    ServerName: '$(MySQLServer-Name).mysql.database.azure.com'
-    SqlUsername: '$(MySQLServer-Username)@$(MySQLServer-Name)'
+    ServerName: '$graduatcase1.mysql.database.azure.com'
+    SqlUsername: '$(MySQLServer-Username)@graduatcase1'
     SqlPassword: '$(MySQLServer-Password)'
     TaskNameSelector: 'InlineSqlTask'
     SqlInline: |
