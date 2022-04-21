@@ -28,7 +28,7 @@ steps:
   inputs:
     azureSubscription: 'GraduateCase'
     appType: 'webApp'
-    appName: 'GraduateCaseApp'
+    appName: 'ASP-GraduateCase-9244'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
 
