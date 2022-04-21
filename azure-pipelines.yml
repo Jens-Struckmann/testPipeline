@@ -12,54 +12,19 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  
-
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-
-- task: PublishBuildArtifacts@1
+- task: DotNetCoreCLI@2
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    command: 'publish'
+    publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'GraduateCase'
     appType: 'webApp'
-    appName: 'ASP-GraduateCase-9244'
-    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+    appName: 'graduatecaseApp'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
 
-
-- task: AzureMysqlDeployment@1
-  inputs:
-    azureSubscription: 'GraduateCase'
-    ServerName: $(MySQLServer-Name)
-    SqlUsername: $(MySQLServer-Username)
-    SqlPassword: $(MySQLServer-Password)
-    TaskNameSelector: 'InlineSqlTask'
-    SqlInline: |
-      DROP DATABASE IF EXISTS quickstartdb;
-      CREATE DATABASE quickstartdb;
-      USE quickstartdb;
-      
-      -- Create a table and insert rows
-      DROP TABLE IF EXISTS inventory;
-      CREATE TABLE inventory (id serial PRIMARY KEY, name VARCHAR(50), quantity INTEGER);
-      INSERT INTO inventory (name, quantity) VALUES ('banana', 150);
-      INSERT INTO inventory (name, quantity) VALUES ('orange', 154);
-      INSERT INTO inventory (name, quantity) VALUES ('apple', 100);
-      
-      -- Read
-      SELECT * FROM inventory;
-      
-      -- Update
-      UPDATE inventory SET quantity = 200 WHERE id = 1;
-      SELECT * FROM inventory;
-      
-      -- Delete
-      DELETE FROM inventory WHERE id = 2;
-      SELECT * FROM inventory;
-    IpDetectionMethod: 'AutoDetect'
