@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jens.hansen\\Desktop\\testpipeline\\testpipeline.csproj": {}
+    "C:\\Users\\jens.hansen\\Desktop\\testPipe\\testPipeline\\testpipeline.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jens.hansen\\Desktop\\testpipeline\\testpipeline.csproj": {
+    "C:\\Users\\jens.hansen\\Desktop\\testPipe\\testPipeline\\testpipeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jens.hansen\\Desktop\\testpipeline\\testpipeline.csproj",
+        "projectUniqueName": "C:\\Users\\jens.hansen\\Desktop\\testPipe\\testPipeline\\testpipeline.csproj",
         "projectName": "testpipeline",
-        "projectPath": "C:\\Users\\jens.hansen\\Desktop\\testpipeline\\testpipeline.csproj",
+        "projectPath": "C:\\Users\\jens.hansen\\Desktop\\testPipe\\testPipeline\\testpipeline.csproj",
         "packagesPath": "C:\\Users\\jens.hansen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jens.hansen\\Desktop\\testpipeline\\obj\\",
+        "outputPath": "C:\\Users\\jens.hansen\\Desktop\\testPipe\\testPipeline\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jens.hansen\\AppData\\Roaming\\NuGet\\NuGet.Config"

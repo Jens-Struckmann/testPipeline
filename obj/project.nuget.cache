@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a9X+xqFP8FJ8Y9Q9e5aMywGDPwwzW12WafwHxYfipEYb/w4+RvCEs2nAOSvSVJFCvkbxBLVm7owySKTsAcYD7w==",
+  "dgSpecHash": "2sDMkiVI5PTqyPDiWxC6bQgolEvGp+CgZjKilIw6Ta0fgK0W7gIk2JVx56pSF0xp0lQ+IJn00k6K8oCnhnPRkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jens.hansen\\Desktop\\testpipeline\\testpipeline.csproj",
+  "projectFilePath": "C:\\Users\\jens.hansen\\Desktop\\testPipe\\testPipeline\\testpipeline.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
