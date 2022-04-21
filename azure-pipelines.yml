@@ -22,7 +22,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'GraduateCase'
+    azureSubscription: Jens Struckmann'
     appType: 'webApp'
     appName: 'graduatecaseApp'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
